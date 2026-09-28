@@ -1,0 +1,38 @@
+# Whitelist approach: ignore everything, then re-include what is needed
+# to recreate the pi setup on another machine.
+/*
+!/.gitignore
+!/README.md
+!/agent/
+
+/agent/*
+!/agent/AGENTS.md
+!/agent/settings.json
+!/agent/models.json
+!/agent/agents/
+!/agent/extensions/
+!/agent/prompts/
+!/agent/npm/
+!/agent/pi-hermes-memory/
+
+# npm packages dir: manifests only
+/agent/npm/*
+!/agent/npm/package.json
+!/agent/npm/package-lock.json
+!/agent/npm/.gitignore
+
+# pi-hermes-memory: skills + global memory files only (no DBs, locks, backups)
+/agent/pi-hermes-memory/*
+!/agent/pi-hermes-memory/skills/
+!/agent/pi-hermes-memory/MEMORY.md
+!/agent/pi-hermes-memory/USER.md
+!/agent/pi-hermes-memory/failures.md
+
+# Never commit these anywhere
+node_modules/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.tmp
+auth.json

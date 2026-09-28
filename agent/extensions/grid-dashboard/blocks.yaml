@@ -1,0 +1,27 @@
+title: Dashboard Scaffold
+columns: 3
+blocks:
+  - id: block-1
+    title: Block 1
+    subtitle: Placeholder
+    command: /block-1
+  - id: block-2
+    title: Block 2
+    subtitle: Placeholder
+    command: /block-2
+  - id: block-3
+    title: Block 3
+    subtitle: Placeholder
+    command: /block-3
+  - id: block-4
+    title: Block 4
+    subtitle: Placeholder
+    command: /block-4
+  - id: block-5
+    title: Block 5
+    subtitle: Placeholder
+    command: /block-5
+  - id: block-6
+    title: Block 6
+    subtitle: Placeholder
+    command: /block-6
